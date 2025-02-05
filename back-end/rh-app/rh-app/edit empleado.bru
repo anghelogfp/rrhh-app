@@ -1,0 +1,20 @@
+meta {
+  name: edit empleado
+  type: http
+  seq: 5
+}
+
+put {
+  url: http://localhost:8080/rh-app/empleados/5
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "id": 5,
+      "nombre": "Felipe Santos",
+      "departamento": "Sociales",
+      "sueldo": 4444.55
+  }
+}

@@ -1,0 +1,19 @@
+meta {
+  name: empleadoss
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8080/rh-app/empleados
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "nombre": "Carlos Lara",
+      "departamento": "RRHH",
+      "sueldo": 10000.1
+  }
+}
